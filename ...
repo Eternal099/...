@@ -1,0 +1,62 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "RQ Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroEnable = false })
+
+-- values
+
+_G.Reprxd = true
+_G.Luxidc = true
+_G.Busylame = true
+
+-- functions
+
+function Reprxd()
+while _G.Reprxd == true do
+loadstring(game:HttpGet("https://pastebin.com/raw/V91NKw9G"))();
+	end
+end
+
+function Luxidc()
+while _G.Luxidc == true do
+loadstring(game:HttpGet("https://pastebin.com/raw/5KtmRcCe",true))()
+	end
+end
+
+function Busylame()
+while _G.Busylame == true do
+loadstring(game:HttpGet("https://pastebin.com/raw/tG6vftih"))();
+	end
+end
+
+
+-- Tabs
+
+local Tab = Window:MakeTab({
+	Name = "RumbleQuest",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+--Buttons
+
+Tab:AddButton({
+	Name = "Reprxd",
+	Callback = function()
+Reprxd()
+  	end
+})
+
+Tab:AddButton({
+	Name = "Lucidy",
+	Callback = function()
+Luxidc()
+		end
+	})
+
+Tab:AddButton({
+	Name = "Busylame",
+	Callback = function()
+Busylame()
+				end
+})
+OrionLib:Init()
